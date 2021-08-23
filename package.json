@@ -1,0 +1,26 @@
+{
+  "name": "facebook-bot-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Suphakorn Homnan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.5",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.7.1",
+    "@types/request": "^2.48.7"
+  }
+}
