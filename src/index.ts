@@ -29,7 +29,7 @@ app.get("/", (req: Request, res: Response) => {
 })
 
 app.get("/webhook", (req: Request, res: Response) => {
-    if (req.query["hub.verify_token"] === "TestBot") {
+    if (req.query["hub.verify_token"] === process.env.VERIFY_TOKEN) {
         return res.send(req.query["hub.challenge"]);
     }
     return res.send("Wrong token");
